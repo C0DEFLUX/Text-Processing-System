@@ -14,6 +14,13 @@ public class Main {
         System.out.println("Enter the text:");
         String text = scanner.nextLine();
 
+        //Check if input is empty
+        if (text == null || text.trim().isEmpty()) { // Basic check for non-empty input
+            System.out.println("The text cannot be null or empty.");
+            scanner.close();
+            return;
+        }
+
         //Loop the switch
         boolean exit = false;
         while (!exit) {
