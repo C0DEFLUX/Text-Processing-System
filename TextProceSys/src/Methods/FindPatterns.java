@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class FindPatterns {
     public int findPatternCount(String text, String pattern)
     {
-        //compiles pattern into a object
+        //compiles pattern into an object
         Pattern p = Pattern.compile(pattern);
 
         //counts the number of found patterns
