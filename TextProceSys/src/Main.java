@@ -43,7 +43,7 @@ public class Main {
                     System.out.println("Enter the pattern: ");
                     String pattern = scanner.nextLine();
                     int patternCount = fp.findPatternCount(pattern);
-                    System.out.println("This pattern '" + pattern + "' found " + patternCount + " times.");
+                    System.out.println("This pattern has been '" + pattern + "' found " + patternCount + " times.");
                     break;
 
                 case 3:
