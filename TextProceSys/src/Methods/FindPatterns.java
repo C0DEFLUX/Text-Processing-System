@@ -15,6 +15,11 @@ public class FindPatterns {
         //matcher object finds patterns
         Matcher m = p.matcher(pattern);
 
+        //counts all matches
+        while(m.find()){
+            count++;
+        }
+
         //returns of found matches
         return count;
     }
