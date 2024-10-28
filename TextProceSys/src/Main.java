@@ -42,8 +42,12 @@ public class Main {
                     FindPatterns fp = new FindPatterns();
                     System.out.println("Enter the pattern: ");
                     String pattern = scanner.nextLine();
-                    int patternCount = fp.findPatternCount(pattern);
-                    System.out.println("This pattern has been '" + pattern + "' found " + patternCount + " times.");
+                    int patternCount = fp.findPatternCount(text,pattern);
+                    if (patternCount > 0) {
+                        System.out.println("Pattern '" + pattern + "' has been found " + patternCount + " times.");
+                    } else {
+                        System.out.println("This pattern hasn't been found.");
+                    }
                     break;
 
                 case 3:

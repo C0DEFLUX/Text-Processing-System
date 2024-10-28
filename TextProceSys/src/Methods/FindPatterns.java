@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 import java.util.Scanner;
 
 public class FindPatterns {
-    public int findPatternCount(String pattern)
+    public int findPatternCount(String text, String pattern)
     {
         //compiles pattern into a object
         Pattern p = Pattern.compile(pattern);
@@ -13,7 +13,7 @@ public class FindPatterns {
         int count = 0;
 
         //matcher object finds patterns
-        Matcher m = p.matcher(pattern);
+        Matcher m = p.matcher(text);
 
         //counts all matches
         while(m.find()){
