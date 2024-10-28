@@ -1,3 +1,5 @@
+import Methods.CountWords;
+import Methods.FindPatterns;
 import Methods.ReplaceText;
 import Methods.ValidateEmail;
 
@@ -29,11 +31,21 @@ public class Main {
             switch (choice) {
                 case 1:
                     //Count words
+                    CountWords countWords = new CountWords();
+                    System.out.println(countWords.countWords("Word counter"));
+                    int wordCount = countWords.countWords(text);
+                    System.out.println("Counted words: " + wordCount);
+                    break;
 
 
                 case 2:
                     //Find pattern
-
+                    FindPatterns fp = new FindPatterns();
+                    System.out.println("Enter the pattern: ");
+                    String pattern = scanner.nextLine();
+                    int patternCount = fp.findPatternCount(pattern);
+                    System.out.println("Pattern '" + pattern + "' found " + patternCount + " times.");
+                    break;
 
                 case 3:
                     //Replace text
